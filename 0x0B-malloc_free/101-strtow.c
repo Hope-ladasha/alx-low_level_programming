@@ -53,11 +53,11 @@ char **strtow(char *str)
 	{
 		if (str[i] == ' ' || str[i] == '\0')
 		{
-			else if (c)
+			if (c)
 			{
 				end = i;
 				tmp = (char *) malloc(sizeof(char) * (c + 1));
-				if (tmp == NULL)
+		        else if(tmp == NULL)
 					return (NULL);
 				while (start < end)
 					*tmp++ = str[start++];
