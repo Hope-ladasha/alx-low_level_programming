@@ -2,10 +2,10 @@
 
 /**
  * binary_search - Binary search algorith
- * @array: array of integers
- * @size: a size of the array/list
- * @value: a value to find
- * Return: an index of the element in the array or -1
+ * @array: An array of integers
+ * @size: size of the array/list
+ * @value: value to find
+ * Return: index of the element in the array or -1
  */
 int binary_search(int *array, size_t size, int value)
 {
@@ -28,7 +28,7 @@ int binary_search(int *array, size_t size, int value)
 			stop = i - 1;
 		else
 			start = i + 1;
-i		i = (stop - start) / 2;
+		i = (stop - start) / 2;
 		i += start;
 	}
 KILL:	return (-1);
